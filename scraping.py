@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+from time import sleep
 
 all_quotes = []
 base_url = "https://quotes.toscrape.com/"
@@ -7,7 +8,7 @@ url = "/page/1"
 
 while url:
     res = requests.get(f"{base_url}{url}")
-    print(f"SCRAPING: ---- >>> {base_url}{url}")
+    print(f"SCRAPING: ---- >>> {base_url}{url} ...")
     soup = BeautifulSoup(res.text, "html.parser")
     quotes = soup.find_all(class_ = "quote")
 
@@ -20,4 +21,7 @@ while url:
 
     next_btn = soup.find(class_="next")     
     url = next_btn.find("a")["href"] if next_btn else None
+    sleep(2) # prevent from overloading the server
+
+
     
