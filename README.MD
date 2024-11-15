@@ -1,6 +1,6 @@
 ### Scraping Project
 
-It visites the website: https://quotes.toscrape.com/ and grab bunch of info abouyt quotes and its authors. Then it starts a game where you have to guess the author of the quote. You hav 4 attempts to guess the right author, each step exept first one include a clue. Quotes are saved in a csv file.
+It visites the website: https://quotes.toscrape.com/ and grab bunch of info abouyt quotes and its authors. Then it starts a game where you have to guess the author of the quote. You hav 4 attempts to guess the right author, each step exept first one include a clue. Quotes can be saved in a csv file.
 
 #### How to run
 
