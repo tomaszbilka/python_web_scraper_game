@@ -14,7 +14,7 @@ It visites the website: https://quotes.toscrape.com/ and grab bunch of info abou
 run in game folder:
 
 ```bash
-`python3 scraping.py`
+python3 scraping.py
 ```
 
 #### Scrap manually, save data to csv and play
@@ -22,11 +22,11 @@ run in game folder:
 run in game folder:
 
 ```bash
-`python3 csv_scraper.py`
+python3 csv_scraper.py
 ```
 
 and play with command:
 
 ```bash
-`python3 csv_scrape_game.py`
+python3 csv_scrape_game.py
 ```
